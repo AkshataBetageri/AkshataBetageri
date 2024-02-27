@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This line is a declaration to the web browser about what version of HTML the page is written in. -->
+
+<html>
+  <!-- This is the root element of an HTML page. -->
+
+  <head>
+    <!-- This contains meta-information about the HTML page. -->
+    <title>My First Webpage</title>
+    <!-- This specifies a title for the HTML page. -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- This links an external CSS file to style the HTML page. -->
+    <script src="script.js"></script>
+    <!-- This links an external JavaScript file to add functionality to the HTML page. -->
+  </head>
+
+  <body>
+    <!-- This contains the content of the HTML page. -->
+    <h1>Welcome to my first webpage!</h1>
+    <!-- This is a heading. -->
+
+    <div id="userForm">
+      <!-- This is a container for the user form. -->
+      <input type="text" id="userName" placeholder="Enter user name" />
+      <!-- This is an input field for the user name. -->
+      <button onclick="addUser()">Add User</button>
+      <!-- This is a button that calls the addUser function when clicked. -->
+    </div>
+
+    <div id="userList">
+      <!-- This is a container for the user list. -->
+      <table>
+        <!-- This is a table. -->
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>User Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="userListBody">
+          <!-- This is a table body. -->
+        </tbody>
+      </table>
+    </div>
+    <!-- This is a container for the user list. -->
+  </body>
+</html>
